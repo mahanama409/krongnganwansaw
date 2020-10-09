@@ -5,7 +5,7 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "0.9.5"
+    "react-scripts": "3.4.3"
   },
   "devDependencies": {},
   "scripts": {
@@ -15,5 +15,17 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build && firebase deploy",
     "pd": "npm run build --dev && firebase hosting:channel:deploy"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
