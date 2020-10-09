@@ -2,7 +2,7 @@
   "name": "krongnganwansaw",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/krongnganwansaw",
+  "homepage": "http://mahanama409.github.io/krongnganwansaw",
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
