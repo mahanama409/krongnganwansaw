@@ -1,37 +1,31 @@
-.App {
+.Head {
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
+}
+
+.black{
+  filter: brightness(85%);
+  z-index: -1; 
+}
+
+.tex{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.center{
+  text-decoration: underline;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: rgb(34, 119, 28);
-  padding: 20px;
   color: white;
+  font-family:'Modern 20';
+  font-weight: 500;
+  font-size: 50px;
+  letter-spacing: 5px;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.app-get {
-  color:black;
-  font-size: large;
-  font-weight:550;
-  margin-top: 400px;
-  border: 3.5px solid black;
-  width: max-content;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0px 10px 0px 10px;
-  border-radius: 20%;
+@font-face {
+  font-family: 'Modern 20';
+  src: local('Modern 20'), url(./Modern No. 20.ttf) format('truetype');
 }
