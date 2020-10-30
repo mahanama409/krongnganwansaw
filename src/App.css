@@ -1,31 +1,106 @@
+.App {
+  font-family: "Modern 20", sans-serif;
+}
+
 .Head {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  color: whitesmoke;
+}
+
+.Head-Container {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.Head-Image {
+  z-index: -1;
+}
+
+.Head-Overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Head-Menu {
+  display: grid;
+  grid-template-columns: 60% 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-
+  height: min-content;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-.black{
-  filter: brightness(85%);
-  z-index: -1; 
+.Head-Menu-Title {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin: 0 0 0 10%;
+  align-self: center;
 }
 
-.tex{
-  grid-column: 1/2;
+.Head-Menu-Select {
+  font-size: 1.25em;
+  align-self: center;
+  justify-self: center;
+  border-bottom: 2px solid white;
+}
+
+.Head-Text {
+  grid-column: 1/-1;
   grid-row: 1/2;
-}
-
-.center{
-  text-decoration: underline;
+  justify-self: center;
+  align-self: center;
   text-align: center;
   color: white;
-  font-family:'Modern 20';
+}
+
+/* The "Start" button*/
+.Head-Button {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  align-self: end;
+  justify-self: center;
+  margin-bottom: 64px;
+
+  font-family: "Modern 20", sans-serif;
+  color: white;
+  font-size: 2em;
+  /* remove default white background*/
+  background: none;
+  /* white boarder around button*/
+  border: 2px solid white;
+  /* make board curve*/
+  border-radius: 20%/50%;
+  padding: 16px 64px 16px 64px;
+  /* make mouse cursor change when hover over button */
+  cursor: pointer;
+}
+
+.Head-Footer {
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+  padding: 0 40% 0 10%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: whitesmoke;
+}
+
+.line {
+  height: 1px;
+  background-color: whitesmoke;
+}
+
+.center {
+  text-align: center;
+  color: white;
+  font-family: "Modern 20";
   font-weight: 500;
   font-size: 50px;
   letter-spacing: 5px;
+  margin: 0 0 16px 0;
 }
 
 @font-face {
-  font-family: 'Modern 20';
-  src: local('Modern 20'), url(./Modern No. 20.ttf) format('truetype');
+  font-family: "Modern 20";
+  src: local("Modern 20"), url(./Modern No. 20.ttf) format("truetype");
 }
